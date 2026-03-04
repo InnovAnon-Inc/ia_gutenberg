@@ -1,0 +1,23 @@
+-- ia_gutenberg/reader.lua
+
+--function ia_gutenberg.show_document(player, title, text)
+--	local name = player:get_player_name()
+--	local escaped_title = minetest.formspec_escape(title)
+--	local escaped_text  = minetest.formspec_escape(text)
+--
+--	-- Using a scroll_container for "Library of Alexandria" scale text
+--	local formspec = {
+--		"size[10,10]",
+--		"real_coordinates[true]",
+--		"bgcolor[#2b2b2b;false]",
+--		"label[0.5,0.5;" .. escaped_title .. "]",
+--		"scrollbaroptions[max=1000;thumbsize=10;arrowstep=10]",
+--		"scrollbar[9.2,1.2;0.3,7.5;vertical;ia_lib_scroll;0]",
+--		"scroll_container[0.5,1.2;8.5,7.5;ia_lib_scroll;vertical;0.1]",
+--			"textarea[0,0;8.5,15;content;;" .. escaped_text .. "]",
+--		"scroll_container_end[]",
+--		"button_exit[4,9.2;2,0.6;close;Close Record]"
+--	}
+--
+--	minetest.show_formspec(name, "ia_gutenberg:reader", table.concat(formspec, ""))
+--end
